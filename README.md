@@ -30,13 +30,26 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+    .map returns an array.
+
 2. What is the difference between a function and a method?
+
+    A method is a function inside an object.
 
 3. What is closure?
 
+    You inherit genes from your parents, they can't get any genes back from you. Closure work like that.
+
 4. Describe the four rules of the 'this' keyword.
 
+    1. Global Binding. In the global scope this. points to the window, which is all of javascript. If you console.log(this) you can see the window/console Object. unless you are strict. 'use strict' then it will be undefined. 
+    2. Implicit Binding.  if we are calling a function/method inside an object it is implied that this will point to that object and not the global.
+    3. New Binding. Constructor functions. this refers to the specific instance of the object that is created by an Object constructor. 
+    4. Explicit Binding. .call .bind and .apply override what the this is pointing to and you can point it to a new object.
+
 5. Why do we need super() in an extended class?
+
+    So that it can inherit the properties from the class it is extending from.
 
 ## Project Set up
 
@@ -74,7 +87,7 @@ This challenge takes a look at callbacks and closures as well as scope.
 
 ## Task 3: Prototypes
 Create constructors, bind methods, and create cuboids in this prototypes challenge.
-* [ ] Use the [prototypes.js](challenges/prototypes.js) link to get started. Read the instructions carefully!
+* [x] Use the [prototypes.js](challenges/prototypes.js) link to get started. Read the instructions carefully!
 
 ## Task 4: Classes
 Once you have completed the prototypes challenge, it's time to convert all your hard work into classes.
