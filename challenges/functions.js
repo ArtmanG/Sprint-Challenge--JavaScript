@@ -41,7 +41,7 @@ console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice t
 
 // Explain in your own words why nestedfunction can access the variable internal.
 
-// Explanation: You inherit genes from your parents, nestedfunction is inheriting access to that variable through its parent function. 
+// Explanation: You inherit genes from your parents, nestedfunction is inside the yellow {} brackets so it is a child of myFunction. It is inheriting access to that variable through its parent function. 
 
 
 
